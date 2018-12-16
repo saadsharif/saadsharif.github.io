@@ -34,7 +34,7 @@ hr{
 }
 
 #navSpace{
-    padding-left: 50px;
+    padding-left: 25px;
 }
 a:link{
     color: #222222;
@@ -47,6 +47,10 @@ a:visited{
 }
 a:hover{
     text-decoration: underline;
+}
+.select::selection {
+    background-color: #222222; /* WebKit/Blink Browsers */
+    color: #ffd700;
 }
 
 footer{
@@ -72,6 +76,18 @@ footer{
     font-family: couture;
     text-align: center;
     font-size: 100px;
+}
+#treeImgInv{
+    max-width:15%;
+    max-height:15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+    position: relative;
+    display: block;
+    
 }
 
 
