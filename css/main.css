@@ -32,6 +32,10 @@ hr{
     top: 40px;
     font-size: 20px;
 }
+
+#navSpace{
+    padding-left: 50px;
+}
 a:link{
     color: #222222;
     text-align: center;
@@ -48,7 +52,7 @@ a:hover{
 footer{
     width:100%;
     position: absolute;
-    bottom:0;
+    bottom:40px;
 }
 #treeImg{
     max-width:15%;
