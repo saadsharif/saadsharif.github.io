@@ -1,0 +1,49 @@
+@font-face{
+    font-family:couture;
+    src: url(../font/couture/couture-bld.otf);
+}
+
+body{
+    background-color: #ffd700;
+    font-family: couture;
+    text-align: center;
+}
+#heading{
+    background-color: #ffd700;
+    text-align: center;
+    font-size: 75px;
+    color: #222222;
+}
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 7px solid #222222;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#links{
+    font-size: 20px;
+}
+a:link{
+    color: #222222;
+    text-align: center;
+}
+a:visited{
+    color: #222222;
+}
+
+#treeImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#inverse{
+    background-color: #222222;
+    color: #ffd700;
+    font-family: couture;
+    text-align: center;
+
+}

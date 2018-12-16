@@ -1,0 +1,73 @@
+@font-face{
+    font-family:couture;
+    src: url(../font/couture/couture-bld.otf);
+}
+
+body{
+    background-color: #ffd700;
+    font-family: couture;
+    text-align: center;
+}
+#heading{
+    position: relative;
+    top: 50px;
+    background-color: #ffd700;
+    text-align: center;
+    font-size: 75px;
+    color: #222222;
+}
+hr{
+    position: relative;
+    top: 30px;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 7px solid #222222;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#links{
+    position: relative;
+    top: 40px;
+    font-size: 20px;
+}
+a:link{
+    color: #222222;
+    text-align: center;
+    text-decoration: none;
+}
+a:visited{
+    color: #222222;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    width:100%;
+    position: absolute;
+    bottom:0;
+}
+#treeImg{
+    max-width:15%;
+    max-height:15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+    position: relative;
+    display: block;
+    
+}
+#inverse{
+    background-color: #222222;
+    color: #ffd700;
+    font-family: couture;
+    text-align: center;
+    font-size: 100px;
+}
+
+
