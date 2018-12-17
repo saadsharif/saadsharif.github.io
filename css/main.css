@@ -10,15 +10,15 @@ body{
 }
 #heading{
     position: relative;
-    top: 50px;
+    top: 100px;
     background-color: #ffd700;
     text-align: center;
-    font-size: 75px;
+    font-size: 100px;
     color: #222222;
 }
 hr{
     position: relative;
-    top: 30px;
+    top: 100px;
     display: block;
     height: 1px;
     border: 0;
@@ -29,13 +29,18 @@ hr{
 
 #links{
     position: relative;
-    top: 40px;
-    font-size: 20px;
+    top: 120px;
+    font-size: 30px;
 }
 
 #navSpace{
-    padding-left: 25px;
+    padding-left: 10px;
 }
+
+a {
+    padding: 4px; 
+}
+
 a:link{
     color: #222222;
     text-align: center;
@@ -46,21 +51,26 @@ a:visited{
     text-decoration: none;
 }
 a:hover{
-    text-decoration: underline;
+    text-decoration: none;
+    color: #ffd700;
+    background-color: #222222;
 }
 .select::selection {
-    background-color: #222222; /* WebKit/Blink Browsers */
+    background-color: #222222;
     color: #ffd700;
 }
-
+.selectInv::selection{
+    background-color: #ffd700;
+    color: #222222;
+}
 footer{
     width:100%;
     position: absolute;
     bottom:40px;
 }
 #treeImg{
-    max-width:15%;
-    max-height:15%;
+    max-width:10%;
+    max-height:10%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -78,8 +88,8 @@ footer{
     font-size: 100px;
 }
 #treeImgInv{
-    max-width:15%;
-    max-height:15%;
+    max-width:10%;
+    max-height:10%;
     display: block;
     margin-left: auto;
     margin-right: auto;
