@@ -3,14 +3,33 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Saad Sharif</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/light.css" />
     <script src="main.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 <body>
-        <span class = "home" onclick = "goHome()"><i class="fas fa-home"></i> Saad Sharif</span>
+        <span class = "home" onload = "typeWriter()" onclick = "goHome()"><i class="fas fa-home"></i> Saad Sharif</span>
+
+        <button onclick="typeWriter()">Click me</button>
+
+        <p id="demo"></p>
+
+        <!-- <script>
+        var i = 0;
+        var txt = 'Lorem ipsum dummy text blabla.';
+        var speed = 50;
+
+        function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+        }
+        </script> -->
+
 
         <footer class="select">
                 <img class = "tree" onclick="goHome()" src="images/tree.png" />
