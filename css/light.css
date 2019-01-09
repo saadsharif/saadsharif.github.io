@@ -4,25 +4,19 @@
 }
 
 body{
-    background-color: #222222;
+    background-color: #ffd700;
     font-family: couture;
     text-align: center;
-    color: #ffd700;
+    color: #222222;
 }
-
-
-.heading{
+#heading{
     position: relative;
     top: 100px;
     /* background-color: #ffd700; */
     text-align: center;
     font-size: 100px;
-    color: #ffd700;
-    padding: 0px;
-}
-.heading::selection{
-    background-color: #ffd700;
     color: #222222;
+    padding: 0px;
 }
 hr{
     position: relative;
@@ -30,7 +24,7 @@ hr{
     display: block;
     height: 1px;
     border: 0;
-    border-top: 7px solid #ffd700;
+    border-top: 7px solid #222222;
     margin: 1em 0;
     width: 95%;
     margin-left: auto;
@@ -42,7 +36,7 @@ hr{
 
     height: 15px;
     width: 15px;
-    background-color: #ffd700;
+    background-color: #222222;
     border-radius: 50%;
     display: inline-block;
  }
@@ -56,15 +50,15 @@ hr{
     left: 10px;
     height: 20px;
     width: 20px;
-    background-color: #ffd700;
+    background-color: #222222;
     border-radius: 50%;
     display: inline-block;
 
     animation-name: bounce;
-    animation-duration: 0.575s;
+    animation-duration: 0.9s;
     animation-direction: alternate;
     animation-timing-function: cubic-bezier(.6, 0.01, 0.01, .6);
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
 
     /* animation-name: bouncegoup;
     animation-duration: 0.3s;
@@ -86,10 +80,10 @@ hr{
 }
 
 @keyframes bounce{
-    to {transform: translate3d(0, 0, 0); }
-    from {transform: translate3d(0, -80px, 0); }
-    /* 50% {transform: translate3d(0, -160px, 0); }
-    75% {transform: translate3d(0, 0, 0); } */
+    0% {transform: translate3d(0, 0, 0); }
+    25% {transform: translate3d(0, -160px, 0); }
+    50% {transform: translate3d(0, -160px, 0); }
+    75% {transform: translate3d(0, 0, 0); }
 }
 
 /* @keyframes bouncegoup{
@@ -118,18 +112,18 @@ hr{
 
 }
 .colourSwitch{
-    background-color: #222222;
-    color: #ffd700;
+    background-color: #ffd700;
+    color: #222222;
     outline: 0px;
 }
 
 .colourSwitch:hover{
     margin-right: 0;
-    background-color: #222222;
-    color: #ffd700;
+    background-color: #ffd700;
+    color: #222222;
     text-decoration: underline;
 }
-#navlink{
+a{
     padding: 3px;
     padding-top: 10px;
 
@@ -137,6 +131,7 @@ hr{
 .tree:focus{
     outline: 0;
 }
+
 .tree:hover{
     filter: blur(2px);
     /* background-color: #ffd700; */
@@ -144,31 +139,32 @@ hr{
     border-radius: 45%;
     padding: 0px; */
 }
+
 .tree:visited{
-    outline-color: #ffd700;
+    outline-color: #222222;
 }
 
-#navlink:link{
-    color: #ffd700;
+a:link{
+    color: #222222;
     text-align: center;
     text-decoration: none;
 }
-#navlink:visited{
-    color: #ffd700;
+a:visited{
+    color: #222222;
     text-decoration: none;
 }
-#navlink:hover{
+a:hover{
     text-decoration: none;
-    color: #222222;
-    background-color: #ffd700;
+    color: #ffd700;
+    background-color: #222222;
 }
 .select::selection {
-    background-color: #ffd700;
-    color: #222222;
-}
-#inverse::selection{
     background-color: #222222;
     color: #ffd700;
+}
+#inverse::selection{
+    background-color: #ffd700;
+    color: #222222;
 }
 footer{
     width:100%;
@@ -188,8 +184,8 @@ footer{
     
 }
 #inverse{
-    background-color: #222222;
-    color: #ffd700;
+    background-color: #ffd700;
+    color: #222222;
     font-family: couture;
     margin-left: auto;
     margin-right: auto;
@@ -209,34 +205,15 @@ footer{
 }
 
 .home{
-    /* position: relative;
-    top: 1px; */
-    
-    font-size: 30px;
-
-    padding: 0px;
-    text-decoration: none;
-    color: #ffd700;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
 .home:hover{
-    transform: scale(1.02);
-    cursor: pointer;
+    transform: scale(1.05);
+    cursor: default;
 }
 
-.home::selection{
-    background-color: #ffd700;
-    color: #222222;
-}
 
-.inProgress::selection{
-    background-color: #ffd700;
-    color: #222222;
-}
-
-.inProgress{
-    font-size: 175px;
-    position: relative;
-    top: 150px;
-}

@@ -6,31 +6,42 @@
         <title>Saad Sharif</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-        <script src="../main.js"></script>
+        <script src="main.js"></script>
         <link rel="icon" href="images/tree.png" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     </head>
 
     <body id="main">
-        <div id = "heading" class="select">Saad Sharif</div>
+        <div class= "colourBut">
+            <span onclick = "colourSwitch(1)" class = "circle"/>
+        </div>
+
+        <!-- <p id = "demo" onload = "typeWriter()">
+                Saad
+        </p> -->
         
+        <div class = "heading" id = "select">
+            Saad Sharif
+            <span class = "ball"/>
+        </div>
+            
         <div>
             <hr>
         </div>
         <nav id = "links">
             <span class="select" id="navSpace" />
-            <a id="link" class="select" href="https://github.com/saadsharif"><i class="fab fa-github"></i>  GitHub</a>
+            <a id="navlink" class="select" href="https://github.com/saadsharif"><i class="fab fa-github"></i>  GitHub</a>
             <span class="select" id="navSpace" />
             |
             <span class="select" id="navSpace" />
-            <a id="link" class="select" href="https://www.linkedin.com/in/saad-sharif-1a3b05174/"><i class="select fab fa-linkedin-in"></i>  LinkedIn</a>
+            <a id="navlink" class="select" href="https://www.linkedin.com/in/saad-sharif-1a3b05174/"><i class="select fab fa-linkedin-in"></i>  LinkedIn</a>
             <span class="select" id="navSpace" />
             |
             <span class="select" id="navSpace" />
-            <a id="link" class="select" href="fxck.html"><i class="fas fa-file-alt"></i>  CV</a>
+            <a id="navlink" class="select" href="fxck.html"><i class="fas fa-file-alt"></i>  CV (none)</a>
         </nav>
         <footer class="select">
-            <img src="images/tree.png" alt="tree">
+            <img class = "tree" onclick="killbill()" src="images/treeInv.png" />
         </footer>
     </body>
 </html>
