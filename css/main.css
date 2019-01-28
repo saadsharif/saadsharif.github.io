@@ -4,12 +4,17 @@
 }
 
 body{
-    background-color: #222222;
+    
     font-family: couture;
     text-align: center;
-    color: #ffd700;
+    margin: 0;
 }
 
+
+.body{
+    background-color: #222222;
+    color: #ffd700
+}
 
 .heading{
     position: relative;
@@ -24,7 +29,7 @@ body{
     background-color: #ffd700;
     color: #222222;
 }
-hr{
+.hr{
     position: relative;
     top: 100px;
     display: block;
@@ -39,16 +44,18 @@ hr{
  .circle{
     position: absolute;
     right: 5px;
+    top: 5px;
 
     height: 15px;
     width: 15px;
     background-color: #ffd700;
     border-radius: 50%;
     display: inline-block;
+    transition: scale 0.5s cubic-bezier(0, 0, 0.3, 1);
  }
  
  .circle:hover{
-    transform: scale(1.25);
+    transform: scale(1.1);
  }
 
 .ball{
@@ -66,18 +73,6 @@ hr{
     animation-timing-function: cubic-bezier(.6, 0.01, 0.01, .6);
     animation-iteration-count: infinite;
 
-    /* animation-name: bouncegoup;
-    animation-duration: 0.3s;
-    animation-direction: normal;
-    animation-timing-function: cubic-bezier(1, 1, 0, 0);
-    animation-iteration-count: 1;
-
-    animation-name: bouncegodown;
-    animation-duration: 0.3s;
-    animation-direction: normal;
-    animation-timing-function: cubic-bezier(0, 0, 1, 1);
-    animation-iteration-count: 1; */
-
  }
  
  .ball:hover{
@@ -88,20 +83,7 @@ hr{
 @keyframes bounce{
     to {transform: translate3d(0, 0, 0); }
     from {transform: translate3d(0, -80px, 0); }
-    /* 50% {transform: translate3d(0, -160px, 0); }
-    75% {transform: translate3d(0, 0, 0); } */
 }
-
-/* @keyframes bouncegoup{
-    from {transform: translate3d(0, 0, 0); }
-    to {transform: translate3d(0, -160px, 0); }
-
-}
-
-@keyframes bouncegodown{
-    from {transform: translate3d(0, -160px, 0); }
-    to {transform: translate3d(0, 0, 0); }
-} */
 
 #links{
     position: relative;
@@ -110,12 +92,12 @@ hr{
 }
 
 #navSpace{
-    padding-left: 10px;
+    padding-left: 25px;
 }
 .colourBut{
     position: absolute;
     right: 10px;
-
+    top: 10px;
 }
 .colourSwitch{
     background-color: #222222;
@@ -130,19 +112,28 @@ hr{
     text-decoration: underline;
 }
 #navlink{
-    padding: 3px;
+    padding: 10px;
     padding-top: 10px;
 
 }
+.tree{
+    transition: filter 0.5s cubic-bezier(0, 0, 0.3, 1);
+    transition: transform 0.12s cubic-bezier(0, 0, 0.3, 1);
+    will-change: filter;
+    will-change: transform;
+    filter: blur(1px);
+}
+
 .tree:focus{
     outline: 0;
 }
 .tree:hover{
-    filter: blur(2px);
+    filter: blur(0px);
     /* background-color: #ffd700; */
     /* color-interpolation-filters: ;
     border-radius: 45%;
     padding: 0px; */
+    transform: scale(1.05, 1.05);
 }
 .tree:visited{
     outline-color: #ffd700;
@@ -170,11 +161,18 @@ hr{
     background-color: #222222;
     color: #ffd700;
 }
-footer{
+.footer{
     width:100%;
     position: absolute;
-    bottom:50px;
+    bottom: 5px;
+    
+    
 }
+/* div + div {
+    margin-top: 50vh;
+} */
+
+
 #treeImg{
     max-width:10%;
     max-height:10%;
@@ -209,9 +207,10 @@ footer{
 }
 
 .home{
-    /* position: relative;
-    top: 1px; */
-    
+    position: relative;
+    top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 30px;
 
     padding: 0px;
@@ -221,7 +220,7 @@ footer{
 }
 
 .home:hover{
-    transform: scale(1.02);
+    transform: scale(1.5);
     cursor: pointer;
 }
 
@@ -238,5 +237,32 @@ footer{
 .inProgress{
     font-size: 175px;
     position: relative;
-    top: 150px;
+    top: 40vh;
+}
+
+#insp{
+    position: relative;
+    top: 500px; 
+}
+
+#navlinkB{
+    position: relative;
+    margin-left: 10px;
+    font-size: 30px;
+    padding: 4px;
+}
+
+#navlinkB:link{
+    color: #ffd700;
+    text-align: center;
+    text-decoration: none;
+}
+#navlinkB:visited{
+    color: #ffd700;
+    text-decoration: none;
+}
+#navlinkB:hover{
+    text-decoration: none;
+    color: #222222;
+    background-color: #ffd700;
 }

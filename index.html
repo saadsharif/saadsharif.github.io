@@ -5,19 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Saad Sharif</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <link id="toggleStyle" rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
         <script src="main.js"></script>
         <link rel="icon" href="images/tree.png" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     </head>
 
-    <body id="main">
-        <div class= "colourBut">
-            <span class = "circle"/>
+    <body id = "main" class = "body" >
+        <div class= "colourBut" onclick = "colourSwitch()">
+            <span id = "colourbutton" class = "circle"/>
         </div>
 
         <!-- <p id = "demo" onload = "typeWriter()">
-                Saad
+                i am not Sad
         </p> -->
         
         <div class = "heading" id = "select">
@@ -26,22 +26,24 @@
         </div>
             
         <div>
-            <hr>
+            <hr class="hr" id="hr">
         </div>
         <nav id = "links">
             <span class="select" id="navSpace" />
-            <a id="navlink" class="select" href="https://github.com/saadsharif"><i class="fab fa-github"></i>  GitHub</a>
+            <a id="navlink" class="select" href="https://github.com/saadsharif"><i class="fab fa-github"></i>    GitHub</a>
             <span class="select" id="navSpace" />
             |
             <span class="select" id="navSpace" />
-            <a id="navlink" class="select" href="https://www.linkedin.com/in/saad-sharif-1a3b05174/"><i class="select fab fa-linkedin-in"></i>  LinkedIn</a>
+            <a id="navlink" class="select" href="https://www.linkedin.com/in/saad-sharif-1a3b05174/"><i class="select fab fa-linkedin-in"></i>    LinkedIn</a>
             <span class="select" id="navSpace" />
             |
             <span class="select" id="navSpace" />
-            <a id="navlink" class="select" href="fxck.html"><i class="fas fa-file-alt"></i>  CV (none)</a>
+            <a id="navlink" class="select" href="fxck.html"><i class="fas fa-file-alt"></i>    CV</a>
         </nav>
-        <footer class="select">
-            <img class = "tree" onclick="killbill()" src="images/treeInv.png" />
+        <footer class="select footer">
+            <!-- <img class = "tree change" id =  "yellowtree" onclick="killbill()" src="images/treeInv.png" />
+            <img class = "tree change" id =  "blacktree" onclick="killbill()" src="images/tree.png"> -->
+            <img id = "YEET" class = "tree" height = "200px" width = "200px"  src="images/treeInv.png">
         </footer>
     </body>
 </html>
