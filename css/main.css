@@ -2,24 +2,19 @@
     font-family:couture;
     src: url(../font/couture/couture-bld.otf);
 }
-
 body{
     
     font-family: couture;
     text-align: center;
     margin: 0;
 }
-
-
 .body{
     background-color: #222222;
     color: #ffd700
 }
-
 .heading{
     position: relative;
     top: 100px;
-    /* background-color: #ffd700; */
     text-align: center;
     font-size: 100px;
     color: #ffd700;
@@ -45,7 +40,6 @@ body{
     position: absolute;
     right: 5px;
     top: 5px;
-
     height: 15px;
     width: 15px;
     background-color: #ffd700;
@@ -53,11 +47,9 @@ body{
     display: inline-block;
     transition: scale 0.5s cubic-bezier(0, 0, 0.3, 1);
  }
- 
  .circle:hover{
     transform: scale(1.1);
  }
-
 .ball{
     position: relative;
     left: 10px;
@@ -74,23 +66,18 @@ body{
     animation-iteration-count: infinite;
 
  }
- 
  .ball:hover{
     transform: scale(1.2);
-
 }
-
 @keyframes bounce{
     to {transform: translate3d(0, 0, 0); }
     from {transform: translate3d(0, -80px, 0); }
 }
-
 #links{
     position: relative;
     top: 120px;
     font-size: 30px;
 }
-
 #navSpace{
     padding-left: 25px;
 }
@@ -104,7 +91,6 @@ body{
     color: #ffd700;
     outline: 0px;
 }
-
 .colourSwitch:hover{
     margin-right: 0;
     background-color: #222222;
@@ -129,10 +115,6 @@ body{
 }
 .tree:hover{
     filter: blur(0px);
-    /* background-color: #ffd700; */
-    /* color-interpolation-filters: ;
-    border-radius: 45%;
-    padding: 0px; */
     transform: scale(1.05, 1.05);
 }
 .tree:visited{
@@ -165,14 +147,7 @@ body{
     width:100%;
     position: absolute;
     bottom: 5px;
-    
-    
 }
-/* div + div {
-    margin-top: 50vh;
-} */
-
-
 #treeImg{
     max-width:10%;
     max-height:10%;
@@ -182,8 +157,7 @@ body{
     width: 50%;
 
     position: relative;
-    display: block;
-    
+    display: block;   
 }
 #inverse{
     background-color: #222222;
@@ -203,7 +177,6 @@ body{
 
     position: relative;
     display: block;
-    
 }
 
 .home{
