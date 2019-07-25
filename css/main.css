@@ -64,7 +64,6 @@ body{
     animation-direction: alternate;
     animation-timing-function: cubic-bezier(.6, 0.01, 0.01, .6);
     animation-iteration-count: infinite;
-
  }
  .ball:hover{
     transform: scale(1.2);
@@ -97,11 +96,6 @@ body{
     color: #ffd700;
     text-decoration: underline;
 }
-#navlink{
-    padding: 10px;
-    padding-top: 10px;
-
-}
 .tree{
     transition: filter 0.5s cubic-bezier(0, 0, 0.3, 1);
     transition: transform 0.12s cubic-bezier(0, 0, 0.3, 1);
@@ -121,6 +115,11 @@ body{
     outline-color: #ffd700;
 }
 
+#navlink{
+    padding: 10px;
+    padding-top: 10px;
+
+}
 #navlink:link{
     color: #ffd700;
     text-align: center;
@@ -178,64 +177,30 @@ body{
     position: relative;
     display: block;
 }
-
 .home{
     position: relative;
     top: 10px;
     margin-left: auto;
     margin-right: auto;
     font-size: 30px;
-
     padding: 0px;
     text-decoration: none;
     color: #ffd700;
-    
 }
-
 .home:hover{
-    transform: scale(1.5);
+    transform:scale(1.025);
     cursor: pointer;
 }
-
 .home::selection{
     background-color: #ffd700;
     color: #222222;
 }
-
 .inProgress::selection{
     background-color: #ffd700;
     color: #222222;
 }
-
 .inProgress{
     font-size: 175px;
     position: relative;
     top: 40vh;
-}
-
-#insp{
-    position: relative;
-    top: 500px; 
-}
-
-#navlinkB{
-    position: relative;
-    margin-left: 10px;
-    font-size: 30px;
-    padding: 4px;
-}
-
-#navlinkB:link{
-    color: #ffd700;
-    text-align: center;
-    text-decoration: none;
-}
-#navlinkB:visited{
-    color: #ffd700;
-    text-decoration: none;
-}
-#navlinkB:hover{
-    text-decoration: none;
-    color: #222222;
-    background-color: #ffd700;
 }
